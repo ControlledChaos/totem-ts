@@ -1,0 +1,23 @@
+/*
+Theme Name: Totem Twenty Seventeen
+Template: twentyseventeen
+Theme URI: https://github.com/ControlledChaos/totem-ts
+Author: Controlled Chaos Design
+Author URI: https://ccdzine.com/
+Description: Twenty Seventeen child theme for Totem Market & Gifts, Three Rivers, California.
+Version: 1.0.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: totem-ts
+*/
+
+.custom-header-media::before {
+	background: rgba(0,0,0,0.5);
+}
+
+@media screen and (min-width: 48em) {
+
+	.has-header-image:not(.twentyseventeen-front-page):not(.home) .site-branding {
+		padding-top: 8em;
+	}
+}
