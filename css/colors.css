@@ -1,1 +1,31 @@
-/* No CSS */
+.has-tts-oak-background-color {
+  background-color: #402920;
+}
+
+.has-tts-redwood-background-color {
+  background-color: #722f04;
+}
+
+.has-tts-river-background-color {
+  background-color: #2c5290;
+}
+
+.has-tts-snow-background-color {
+  background-color: #eeeeee;
+}
+
+.has-tts-oak-color {
+  color: #402920;
+}
+
+.has-tts-redwood-color {
+  color: #722f04;
+}
+
+.has-tts-river-color {
+  color: #2c5290;
+}
+
+.has-tts-snow-color {
+  color: #eeeeee;
+}

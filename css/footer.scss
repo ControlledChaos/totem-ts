@@ -1,0 +1,15 @@
+.site-footer {
+	background: $oak;
+	color: #eee;
+	border: none;
+
+	a,
+	.widget ul li a {
+		color: #eee;
+
+		&:hover,
+		&:focus {
+			color: rgba(255,255,255,0.6);
+		}
+	}
+}

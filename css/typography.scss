@@ -4,27 +4,127 @@ input,
 select,
 textarea {
 	font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	font-size: 18px;
+	font-size: 1.125rem
+}
+
+.has-small-font-size {
+	font-size: 14px;
+	font-size: 0.875rem
+}
+
+.has-normal-font-size {
+	font-size: 18px;
+	font-size: 1.125rem
+}
+
+.has-large-font-size {
+	font-size: 22px;
+	font-size: 1.375rem
+}
+
+// Reset the Twenty Seventeen uppercase instances.
+.page .panel-content .entry-title,
+.page-title,
+body.page:not(.twentyseventeen-front-page) .entry-title,
+h2.widget-title {
+	text-transform: none;
 }
 
 h1,
 h2,
 h3,
 .site-title {
-	font-family: adelle, 'NonBreakingSpaceOverride', 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif;
+	font-family: adelle, 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: $oak;
+
+	&:hover,
+	&:focus {
+		color: $redwood;
+	}
+}
+
+.entry-content a {
+	font-weight: bold;
+	font-weight: 600;
+}
+
+.entry-content a:focus, .entry-content a:hover, .entry-summary a:focus, .entry-summary a:hover, .comment-content a:focus, .comment-content a:hover, .widget a:focus, .widget a:hover, .site-footer .widget-area a:focus, .site-footer .widget-area a:hover, .posts-navigation a:focus, .posts-navigation a:hover, .comment-metadata a:focus, .comment-metadata a:hover, .comment-metadata a.comment-edit-link:focus, .comment-metadata a.comment-edit-link:hover, .comment-reply-link:focus, .comment-reply-link:hover, .widget_authors a:focus strong, .widget_authors a:hover strong, .entry-title a:focus, .entry-title a:hover, .entry-meta a:focus, .entry-meta a:hover, .page-links a:focus .page-number, .page-links a:hover .page-number, .entry-footer a:focus, .entry-footer a:hover, .entry-footer .cat-links a:focus, .entry-footer .cat-links a:hover, .entry-footer .tags-links a:focus, .entry-footer .tags-links a:hover, .post-navigation a:focus, .post-navigation a:hover, .pagination a:not(.prev):not(.next):focus, .pagination a:not(.prev):not(.next):hover, .comments-pagination a:not(.prev):not(.next):focus, .comments-pagination a:not(.prev):not(.next):hover, .logged-in-as a:focus, .logged-in-as a:hover, a:focus .nav-title, a:hover .nav-title, .edit-link a:focus, .edit-link a:hover, .site-info a:focus, .site-info a:hover, .widget .widget-title a:focus, .widget .widget-title a:hover, .widget ul li a:focus, .widget ul li a:hover {
+	color: $redwood;
+}
+
+a:focus {
+    outline: none;
 }
 
 .site-title {
 	font-weight: bold;
 	font-weight: 600;
 	text-transform: none;
-	letter-spacing: 0.015em;
+	letter-spacing: 0.05em;
+	font-variant: small-caps;
 }
 
 .site-description {
-	font-family: adelle, 'NonBreakingSpaceOverride', 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif;
+	font-family: adelle, 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif;
 	font-size: 1.325em;
 	font-weight: bold;
 	font-weight: 600;
+	font-style: italic;
+}
+
+.page .panel-content .entry-title,
+.page-title,
+.entry-title,
+body.page:not(.twentyseventeen-front-page) .entry-title {
+	color: $oak;
+	font-size: 32px;
+	font-size: 2rem;
+	font-weight: bold;
+	font-weight: 700;
+	font-variant: small-caps;
+	letter-spacing: 0.035em;
+
+	a {
+		color: $oak;
+
+		&:hover {
+			color: $redwood;
+		}
+	}
+}
+
+.home.blog .entry-title {
+	font-weight: bold;
+	font-weight: 700;
+	color: $oak;
+}
+
+// Get rid of the parent theme's link hover effect.
+.entry-content a, .entry-summary a, .comment-content a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong.entry-title a, .entry-meta a, .page-links a, .page-links a .page-number, .entry-footer a, .entry-footer .cat-links a, .entry-footer .tags-links a, .edit-link a, .post-navigation a, .logged-in-as a, .comment-navigation a, .comment-metadata a, .comment-metadata a.comment-edit-link, .comment-reply-link, a .nav-title, .pagination a, .comments-pagination a, .site-info a, .widget .widget-title a, .widget ul li a, .site-footer .widget-area ul li a, .site-footer .widget-area ul li a, .entry-content a:focus, .entry-content a:hover, .entry-summary a:focus, .entry-summary a:hover, .comment-content a:focus, .comment-content a:hover, .widget a:focus, .widget a:hover, .site-footer .widget-area a:focus, .site-footer .widget-area a:hover, .posts-navigation a:focus, .posts-navigation a:hover, .comment-metadata a:focus, .comment-metadata a:hover, .comment-metadata a.comment-edit-link:focus, .comment-metadata a.comment-edit-link:hover, .comment-reply-link:focus, .comment-reply-link:hover, .widget_authors a:focus strong, .widget_authors a:hover strong, .entry-title a:focus, .entry-title a:hover, .entry-meta a:focus, .entry-meta a:hover, .page-links a:focus .page-number, .page-links a:hover .page-number, .entry-footer a:focus, .entry-footer a:hover, .entry-footer .cat-links a:focus, .entry-footer .cat-links a:hover, .entry-footer .tags-links a:focus, .entry-footer .tags-links a:hover, .post-navigation a:focus, .post-navigation a:hover, .pagination a:not(.prev):not(.next):focus, .pagination a:not(.prev):not(.next):hover, .comments-pagination a:not(.prev):not(.next):focus, .comments-pagination a:not(.prev):not(.next):hover, .logged-in-as a:focus, .logged-in-as a:hover, a:focus .nav-title, a:hover .nav-title, .edit-link a:focus, .edit-link a:hover, .site-info a:focus, .site-info a:hover, .widget .widget-title a:focus, .widget .widget-title a:hover, .widget ul li a:focus, .widget ul li a:hover {
+	box-shadow: none !important;
+}
+
+/**
+ * Media Queries
+ */
+@media screen and ( min-width: 48em ) {
+
+	.site-title {
+		font-size: 2.5em;
+	}
+
+	.navigation-top {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
 }
 
 // If Adobe cannot be reached for fonts.

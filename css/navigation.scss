@@ -1,0 +1,29 @@
+.navigation-top {
+	background: $oak;
+	border: none;
+}
+
+.navigation-top a,
+.navigation-top .current-menu-item > a,
+.navigation-top .current_page_item > a {
+	color: #eee;
+}
+
+.main-navigation li:not(.current-menu-item):not(.current-page-item) > a:hover {
+    color: rgba(255,255,255,0.6);
+}
+
+/**
+ * Media Queries
+ */
+@media screen and ( min-width: 48em ) {
+
+	.site-header .navigation-top .menu-scroll-down {
+		color: #eee;
+		top: 0;
+	}
+
+	.menu-scroll-down:focus {
+		outline: none;
+	}
+}
