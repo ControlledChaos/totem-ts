@@ -36,8 +36,9 @@ input,
 select,
 textarea {
   font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 19px;
+  font-size: 1.1875rem;
+  color: #291d11;
 }
 
 .has-small-font-size {
@@ -235,6 +236,9 @@ body.page:not(.twentyseventeen-front-page) .entry-title a:hover {
   .alignwide {
     margin-left: -3em;
     margin-right: -3em;
+  }
+  .background-fixed .panel-image {
+    background-size: cover;
   }
 }
 

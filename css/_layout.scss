@@ -66,6 +66,10 @@
 		margin-left: -3em;
 		margin-right: -3em;
 	}
+
+	.background-fixed .panel-image {
+		background-size: cover;
+	}
 }
 
 @media screen and (min-width: 67em) {
