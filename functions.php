@@ -16,19 +16,41 @@ if ( ! defined( 'WPINC' ) ) {
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 /**
- * Define the companion plugin path: directory and core file name.
+ * Define the companion plugin path
  *
  * This theme is designed to coordinate with a companion plugin.
- * Change the following path to the new name of the starter companion
- * plugin, found at the following link.
+ *
+ * Defines the directory and core plugin file name.
  *
  * @link   https://github.com/ControlledChaos/totem-plugin
  *
  * @since  1.0.0
  * @return string Returns the plugin path.
  */
-if ( ! defined( 'TTS_PLUGIN' ) ) {
-	define( 'TTS_PLUGIN', 'totem-plugin/totem-plugin.php' );
+if ( ! defined( 'TOTEM_PLUGIN' ) ) {
+	define( 'TOTEM_PLUGIN', 'totem-plugin/totem-plugin.php' );
+}
+
+/**
+ * Check for the plugin dependency.
+ *
+ * Add an admin error notice if the companion plugin is not active.
+ *
+ * @since  1.0.0
+ * @return void
+ */
+if ( ! is_plugin_active( TOTEM_PLUGIN ) ) {
+	add_action( 'admin_notices', 'tts_plugin_notice' );
+}
+
+/**
+ * Get the plugin admin notice output.
+ *
+ * @since  1.0.0
+ * @return void
+ */
+function tts_plugin_notice() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/partials/totem-plugin-notice.php';
 }
 
 /**
@@ -317,4 +339,32 @@ add_filter( 'image_size_names_choose', 'tts_image_size_choose' );
  * @access private
  * @return void
  */
+
+// Get custom fields before other functions which may use them fields.
+require_once get_theme_file_path( '/includes/acf-field-functions.php' );
+
+
+// Page template functionality.
 require_once get_theme_file_path( '/includes/template-functions.php' );
+
+/**
+ * Front page sections
+ *
+ * Modifies the default number of sections: four (4).
+ *
+ * @since  1.0.0
+ * @access public
+ * @return integer Returns the number of sections.
+ */
+function tts_front_page_sections() {
+
+	if ( function_exists( 'tts_front_page_sections_field' ) ) {
+		$display = tts_front_page_sections_field();
+	} else {
+		$display = 5;
+	}
+
+	return $display;
+
+}
+add_filter( 'twentyseventeen_front_page_sections', 'tts_front_page_sections' );
