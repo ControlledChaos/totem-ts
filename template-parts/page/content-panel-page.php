@@ -26,7 +26,7 @@ $panel_notice = sprintf(
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'totem-ts' ),
 				'after'  => '</div>',
 			) );
 		?>
