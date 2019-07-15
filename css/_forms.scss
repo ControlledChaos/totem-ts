@@ -1,0 +1,11 @@
+button,
+input[type="button"],
+input[type="submit"] {
+	background-color: $oak;
+	color: $snow;
+
+	&:hover,
+	&:focus {
+		background-color: $redwood;
+	}
+}

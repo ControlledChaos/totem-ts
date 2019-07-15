@@ -37,8 +37,8 @@ select,
 textarea {
   font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   font-size: 19px;
-  font-size: 1.1875rem;
-  color: #291d11;
+  font-size: 1.185rem;
+  color: #402920;
 }
 
 .has-small-font-size {
@@ -138,15 +138,50 @@ body.page:not(.twentyseventeen-front-page) .entry-title a:hover {
   color: #722f04;
 }
 
+/**
+ * Front page
+ */
+.panel-content p {
+  font-size: 1.0825em;
+  line-height: 1.825;
+}
+
+/**
+ * Blog pages
+ */
 .home.blog .entry-title {
   font-weight: bold;
   font-weight: 700;
   color: #402920;
 }
 
+.blog .page-title,
+.archive .page-title {
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #cccccc;
+}
+
+/**
+ * Widgets
+ */
+#secondary {
+  font-size: 19px;
+  font-size: 1.185rem;
+}
+
+#secondary h2.widget-title {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: #402920;
+}
+
 .entry-content a, .entry-summary a, .comment-content a, .widget a, .site-footer .widget-area a, .posts-navigation a, .widget_authors a strong.entry-title a, .entry-meta a, .page-links a, .page-links a .page-number, .entry-footer a, .entry-footer .cat-links a, .entry-footer .tags-links a, .edit-link a, .post-navigation a, .logged-in-as a, .comment-navigation a, .comment-metadata a, .comment-metadata a.comment-edit-link, .comment-reply-link, a .nav-title, .pagination a, .comments-pagination a, .site-info a, .widget .widget-title a, .widget ul li a, .site-footer .widget-area ul li a, .site-footer .widget-area ul li a, .entry-content a:focus, .entry-content a:hover, .entry-summary a:focus, .entry-summary a:hover, .comment-content a:focus, .comment-content a:hover, .widget a:focus, .widget a:hover, .site-footer .widget-area a:focus, .site-footer .widget-area a:hover, .posts-navigation a:focus, .posts-navigation a:hover, .comment-metadata a:focus, .comment-metadata a:hover, .comment-metadata a.comment-edit-link:focus, .comment-metadata a.comment-edit-link:hover, .comment-reply-link:focus, .comment-reply-link:hover, .widget_authors a:focus strong, .widget_authors a:hover strong, .entry-title a:focus, .entry-title a:hover, .entry-meta a:focus, .entry-meta a:hover, .page-links a:focus .page-number, .page-links a:hover .page-number, .entry-footer a:focus, .entry-footer a:hover, .entry-footer .cat-links a:focus, .entry-footer .cat-links a:hover, .entry-footer .tags-links a:focus, .entry-footer .tags-links a:hover, .post-navigation a:focus, .post-navigation a:hover, .pagination a:not(.prev):not(.next):focus, .pagination a:not(.prev):not(.next):hover, .comments-pagination a:not(.prev):not(.next):focus, .comments-pagination a:not(.prev):not(.next):hover, .logged-in-as a:focus, .logged-in-as a:hover, a:focus .nav-title, a:hover .nav-title, .edit-link a:focus, .edit-link a:hover, .site-info a:focus, .site-info a:hover, .widget .widget-title a:focus, .widget .widget-title a:hover, .widget ul li a:focus, .widget ul li a:hover {
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 /**
@@ -172,6 +207,33 @@ body.page:not(.twentyseventeen-front-page) .entry-title a:hover {
 
 .no-adobe .site-description {
   font-family: 'roboto-slab-regular', 'NonBreakingSpaceOverride', 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif;
+}
+
+/**
+ * Placeholders
+ */
+::-webkit-input-placeholder {
+  color: #888888;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #888888;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #888888;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #888888;
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  opacity: 1;
 }
 
 .twentyseventeen-front-page.has-header-image .custom-header-media::before,
@@ -246,6 +308,21 @@ body.page:not(.twentyseventeen-front-page) .entry-title a:hover {
   .navigation-top .wrap {
     padding: 0 2em;
   }
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: #402920;
+  color: #eeeeee;
+}
+
+button:hover, button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #722f04;
 }
 
 .custom-header {
