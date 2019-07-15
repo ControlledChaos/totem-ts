@@ -1,6 +1,7 @@
 // Color variables.
 $oak: #402920;
 $redwood: #722f04;
+$dry_grass: #f5ebc3;
 $river: #2c5290;
 $snow: #eeeeee;
 $cloud: #cccccc;
@@ -8,34 +9,34 @@ $rock: #888888;
 
 // Block editor background color classes.
 .has-tts-oak-background-color {
-	background-color: #402920;
+	background-color: $oak;
 }
 
 .has-tts-redwood-background-color {
-	background-color: #722f04;
+	background-color: $redwood;
 }
 
 .has-tts-river-background-color {
-	background-color: #2c5290;
+	background-color: $river;
 }
 
 .has-tts-snow-background-color {
-	background-color: #eeeeee;
+	background-color: $snow;
 }
 
 // Block editor text color classes.
 .has-tts-oak-color {
-	color: #402920;
+	color: $oak;
 }
 
 .has-tts-redwood-color {
-	color: #722f04;
+	color: $redwood;
 }
 
 .has-tts-river-color {
-	color: #2c5290;
+	color: $river;
 }
 
 .has-tts-snow-color {
-	color: #eeeeee;
+	color: $snow;
 }

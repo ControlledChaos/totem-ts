@@ -41,7 +41,7 @@
 }
 
 .edit-post-visual-editor .editor-block-list__block {
-  color: #333;
+  color: #402920;
 }
 
 .editor-post-title__block .editor-post-title__input {
@@ -53,7 +53,6 @@
   font-weight: 700;
   font-variant: small-caps;
   letter-spacing: 0.035em;
-  color: #722f04;
 }
 
 @media screen and (min-width: 30em) {

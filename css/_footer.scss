@@ -1,5 +1,6 @@
+.footer-widgets,
 .site-footer {
-	background: $oak;
+	margin: 0;
 	color: #eee;
 	border: none;
 
@@ -12,4 +13,16 @@
 			color: rgba(255,255,255,0.6);
 		}
 	}
+
+	.copyright-text {
+		margin: 0;
+	}
+}
+
+.footer-widgets {
+	background: $dry_grass;
+}
+
+.site-footer {
+	background: $oak;
 }

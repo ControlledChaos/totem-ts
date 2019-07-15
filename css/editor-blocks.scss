@@ -11,18 +11,18 @@
 }
 
 .edit-post-visual-editor .editor-block-list__block {
-	color: #333;
+	color: $oak;
 }
 
 .editor-post-title__block .editor-post-title__input {
-	font-family: adelle, 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif;color: #402920;
+	font-family: adelle, 'Hoefler Text', 'Baskerville Old Face', Garamond, 'Times New Roman', serif;
+	color: $oak;
 	font-size: 32px;
 	font-size: 2rem;
 	font-weight: bold;
 	font-weight: 700;
 	font-variant: small-caps;
 	letter-spacing: 0.035em;
-	color: $redwood;
 }
 
 @media screen and (min-width: 30em) {
