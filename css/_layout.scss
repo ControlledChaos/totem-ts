@@ -41,6 +41,12 @@
 	width: 100vw;
 }
 
+.blog .page-title,
+.archive .page-title {
+	padding-bottom: 1rem;
+	border-bottom: solid 1px $cloud;
+}
+
 /**
  * Media Queries
  */

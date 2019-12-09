@@ -3,7 +3,7 @@ button,
 input,
 select,
 textarea {
-	font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+	font-family: proxima-nova, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 	font-size: 19px;
 	font-size: 1.185rem;
 	color: $oak;
@@ -122,12 +122,6 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 	color: $oak;
 }
 
-.blog .page-title,
-.archive .page-title {
-	padding-bottom: 1rem;
-	border-bottom: solid 1px $cloud;
-}
-
 /**
  * Widgets
  */
@@ -140,6 +134,21 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 		line-height: 1.2;
 		font-size: 21px;
 		font-size: 1.3125rem;
+		font-weight: 700;
+		letter-spacing: normal;
+		color: $oak;
+	}
+}
+
+.footer-widgets {
+	font-size: 19px;
+	font-size: 1.185rem;
+
+	h2.widget-title {
+		margin-bottom: 1rem;
+		line-height: 1.2;
+		font-size: 24px;
+		font-size: 1.5rem;
 		font-weight: 700;
 		letter-spacing: normal;
 		color: $oak;
@@ -176,6 +185,11 @@ body.page:not(.twentyseventeen-front-page) .entry-title {
 	.navigation-top {
 		font-size: 18px;
 		font-size: 1.125rem;
+	}
+
+	h2.widget-title {
+		font-size: 11px;
+		font-size: 0.6875rem;
 	}
 }
 

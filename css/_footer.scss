@@ -1,12 +1,32 @@
 .footer-widgets,
 .site-footer {
 	margin: 0;
-	color: #eee;
 	border: none;
+}
+
+.footer-widgets {
+	padding-top: 3rem;
+	background: $dry_grass;
+	color: $snow;
 
 	a,
 	.widget ul li a {
-		color: #eee;
+		color: $oak;
+
+		&:hover,
+		&:focus {
+			color: $redwood;
+		}
+	}
+}
+
+.site-footer {
+	background: $oak;
+	color: $snow;
+
+	a,
+	.widget ul li a {
+		color: $snow;
 
 		&:hover,
 		&:focus {
@@ -17,12 +37,4 @@
 	.copyright-text {
 		margin: 0;
 	}
-}
-
-.footer-widgets {
-	background: $dry_grass;
-}
-
-.site-footer {
-	background: $oak;
 }

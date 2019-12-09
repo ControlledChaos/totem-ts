@@ -35,7 +35,7 @@ button,
 input,
 select,
 textarea {
-  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: proxima-nova, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   font-size: 19px;
   font-size: 1.185rem;
   color: #402920;
@@ -155,12 +155,6 @@ body.page:not(.twentyseventeen-front-page) .entry-title a:hover {
   color: #402920;
 }
 
-.blog .page-title,
-.archive .page-title {
-  padding-bottom: 1rem;
-  border-bottom: solid 1px #cccccc;
-}
-
 /**
  * Widgets
  */
@@ -174,6 +168,21 @@ body.page:not(.twentyseventeen-front-page) .entry-title a:hover {
   line-height: 1.2;
   font-size: 21px;
   font-size: 1.3125rem;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: #402920;
+}
+
+.footer-widgets {
+  font-size: 19px;
+  font-size: 1.185rem;
+}
+
+.footer-widgets h2.widget-title {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: normal;
   color: #402920;
@@ -203,6 +212,10 @@ body.page:not(.twentyseventeen-front-page) .entry-title a:hover {
   .navigation-top {
     font-size: 18px;
     font-size: 1.125rem;
+  }
+  h2.widget-title {
+    font-size: 11px;
+    font-size: 0.6875rem;
   }
 }
 
@@ -287,6 +300,12 @@ body.page:not(.twentyseventeen-front-page) .entry-title a:hover {
   width: 100vw;
 }
 
+.blog .page-title,
+.archive .page-title {
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #cccccc;
+}
+
 /**
  * Media Queries
  */
@@ -343,17 +362,33 @@ input[type="submit"]:focus {
 }
 
 .navigation-top {
-  background: #402920;
+  background: #fff;
   border: none;
+  -webkit-transition: all .25s;
+  transition: all .25s;
 }
 
 .navigation-top a,
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a {
-  color: #eee;
+  color: #402920;
 }
 
-.main-navigation li:not(.current-menu-item):not(.current-page-item) > a:hover {
+.navigation-top li:not(.current-menu-item):not(.current-page-item) > a:hover {
+  color: #722f04;
+}
+
+.navigation-top.site-navigation-fixed {
+  background: #402920;
+}
+
+.navigation-top.site-navigation-fixed a,
+.navigation-top.site-navigation-fixed .current-menu-item > a,
+.navigation-top.site-navigation-fixed .current_page_item > a {
+  color: #eeeeee;
+}
+
+.navigation-top.site-navigation-fixed li:not(.current-menu-item):not(.current-page-item) > a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -362,11 +397,14 @@ input[type="submit"]:focus {
  */
 @media screen and (min-width: 48em) {
   .site-header .navigation-top .menu-scroll-down {
-    color: #eee;
+    color: #402920;
     top: 0;
   }
-  .menu-scroll-down:focus {
+  .site-header .navigation-top .menu-scroll-down:focus {
     outline: none;
+  }
+  .site-header .navigation-top.site-navigation-fixed .menu-scroll-down {
+    color: #eeeeee;
   }
 }
 
@@ -378,36 +416,42 @@ input[type="submit"]:focus {
 .footer-widgets,
 .site-footer {
   margin: 0;
-  color: #eee;
   border: none;
 }
 
+.footer-widgets {
+  padding-top: 3rem;
+  background: #f5efd9;
+  color: #eeeeee;
+}
+
 .footer-widgets a,
-.footer-widgets .widget ul li a,
-.site-footer a,
-.site-footer .widget ul li a {
-  color: #eee;
+.footer-widgets .widget ul li a {
+  color: #402920;
 }
 
 .footer-widgets a:hover, .footer-widgets a:focus,
 .footer-widgets .widget ul li a:hover,
-.footer-widgets .widget ul li a:focus,
-.site-footer a:hover,
-.site-footer a:focus,
+.footer-widgets .widget ul li a:focus {
+  color: #722f04;
+}
+
+.site-footer {
+  background: #402920;
+  color: #eeeeee;
+}
+
+.site-footer a,
+.site-footer .widget ul li a {
+  color: #eeeeee;
+}
+
+.site-footer a:hover, .site-footer a:focus,
 .site-footer .widget ul li a:hover,
 .site-footer .widget ul li a:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-widgets .copyright-text,
 .site-footer .copyright-text {
   margin: 0;
-}
-
-.footer-widgets {
-  background: #f5ebc3;
-}
-
-.site-footer {
-  background: #402920;
 }
